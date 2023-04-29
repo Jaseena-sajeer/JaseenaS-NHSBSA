@@ -12,7 +12,7 @@ public class EnvConfig {
 	        String browser = null;
 
 	        try {
-	            input = new FileInputStream("/test/resources/features/runconfig.properties");
+	            input = new FileInputStream("runconfig.properties");
 	            prop.load(input);
 	            browser = prop.getProperty("browser");
 	            System.out.println("Browser value is: " + browser);
@@ -36,7 +36,7 @@ public class EnvConfig {
 	        String url = null;
 
 	        try {
-	            input = new FileInputStream("/test/resources/features/runconfig.properties");
+	            input = new FileInputStream("runconfig.properties");
 	            prop.load(input);
 	            url = prop.getProperty("url");
 	            System.out.println("url value is: " + url);
