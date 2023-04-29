@@ -6,7 +6,6 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Config {
 	 static WebDriver driver = null;
@@ -26,13 +25,13 @@ public class Config {
 		 switch(browser)
 		 {
 		 case "chrome":
-			  WebDriverManager.chromedriver().setup();
+			//  WebDriverManager.chromedriver().setup();
               driver = new ChromeDriver();
               driver.manage().window().maximize();
               break;
               
 		 case "firefox":
-			 WebDriverManager.firefoxdriver().setup();
+			// WebDriverManager.firefoxdriver().setup();
             driver = new FirefoxDriver();
              break;
 		 default:
